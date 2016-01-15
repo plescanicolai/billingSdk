@@ -1,1 +1,1 @@
-# A symfony SDK Bundle for Billercentral API - Version 1
+# Symfony SDK Bundle for billing API - Version 2
