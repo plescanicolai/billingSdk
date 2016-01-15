@@ -1,0 +1,32 @@
+{
+    "name": "billercentral-sdk/billing-bundle",
+    "type": "symfony-bundle",
+    "description": "A symfony Bundle for Billercentral API",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Starsoft East Team",
+            "email": "developement@feedify.de"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.5",
+        "guzzlehttp/guzzle": "~6.0",
+        "guzzlehttp/psr7": "~1.0"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+
+    "suggest": {
+        "ext-curl": "To send requests using cURL"
+    },
+
+    "autoload": {
+        "psr-0": { "BillercentralSdk\\BillingBundle": "" }
+    },
+
+    "target-dir": "BillercentralSdk/BillingBundle"
+}

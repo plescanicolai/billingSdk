@@ -1,0 +1,12 @@
+services:
+    flexcharge.auth_service:
+        class: BillercentralSdk\BillingBundle\Service\Auth
+        arguments: ["%billercentral_credentials%", "%kernel.root_dir%"]
+
+    flexcharge.contracts_service:
+        class: BillercentralSdk\BillingBundle\Service\Contracts
+        arguments: ["@flexcharge.auth_service"]
+
+    flexcharge.orders_service:
+        class: BillercentralSdk\BillingBundle\Service\Orders
+        arguments: ["@flexcharge.auth_service"]
